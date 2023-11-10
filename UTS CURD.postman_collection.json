@@ -1,0 +1,125 @@
+{
+	"info": {
+		"_postman_id": "a0565d4d-9582-4113-aba1-efd767017fdf",
+		"name": "UTS CURD",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "31062481"
+	},
+	"item": [
+		{
+			"name": "http://localhost/pariwisata/master.php",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nama_objek\": \"Pantai Marina\",\r\n    \"alamat\": \"Tawangsari, Semarang\",\r\n    \"fasilitas\": \"tempat parkir, sewa perahu, kamar mandi, musholla\",\r\n    \"harga_tiket\": \"10000\",\r\n    \"status\":\"dikelola dispar\",\r\n    \"jam_buka\" : \"07.00\",\r\n    \"jam_tutup\" : \"17.00\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost/pariwisata/master.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"pariwisata",
+						"master.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost/pariwisata/master.php",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id_objek\": 1,\r\n        \"nama_objek\": \"Lawang Sewu\",\r\n        \"alamat\": \"Jl. Pemuda no. 160, Sekayu, Semarang\",\r\n        \"fasilitas\": \"toilet, musholla, smooking area, ruang PPPK, museum, ruang audio visual\",\r\n        \"harga_tiket\": 17000,\r\n        \"status\": \"dikelola dispar\",\r\n        \"jam_buka\": \"07.00\",\r\n        \"jam_tutup\": \"17.00\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost/pariwisata/master.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"pariwisata",
+						"master.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost/pariwisata/master.php",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id_objek\": 2\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost/pariwisata/master.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"pariwisata",
+						"master.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost/pariwisata/master.php",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id_objek\": 2\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost/pariwisata/master.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"pariwisata",
+						"master.php"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
